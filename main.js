@@ -291,10 +291,20 @@ console.log("   150 :", ageClassification(150) === null); // 150 : null
  * oddFn(15) → [1, 3, 5, 7, 9, 11, 13, 15]
  * oddFn(20) → [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
  */
+// function oddFn(n) {
+//   const result = [];
+//   for (let i = 1; i <= n; i += 2) {
+//     result.push(i);
+//   }
+//   return result;
+// }
+
 function oddFn(n) {
   const result = [];
-  for (let i = 1; i <= n; i += 2) {
+  let i = 1;
+  while (i <= n) {
     result.push(i);
+    i += 2;
   }
   return result;
 }
